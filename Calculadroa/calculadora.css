@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#f741c0 , #05817b);
+  }
+.txtview{
+    width: 100%;
+    height: 90px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 0px;
+    pointer-events: none;
+    border-radius: 10px;
+    background: rgb(57, 66, 59);
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: transparent;
+}
+.numeracion{
+    border-radius: 25px;
+    background: rgb(91, 95, 92);
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    width: 50;
+    height: 50;
+    font-size: 25;
+    margin: 2;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.operacion{
+    border-radius: 50px;
+    background-color: rgb(47, 51, 49);
+}
+.borrarBtn{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(0, 129, 80);
+}

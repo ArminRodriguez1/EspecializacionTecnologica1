@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link href="calculadora.css" rel="stylesheet" />
+        ```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+```
+    </head>
+    <body>
+        <div class="container">
+            <form action="#" name="forms">
+                <div>
+                     <input class="txtview" type ="text" name="answer">
+                </div>
+            </form>
+            <div class="numeracion">
+                    <table>
+                        <tr>
+                            <td><input class ="button" type="button" value="7" onclick="forms.answer.value += '7'"></td>
+                            <td><input class ="button" type="button" value="8" onclick="forms.answer.value += '8'"></td>
+                            <td><input class ="button" type="button" value="9" onclick="forms.answer.value += '9'"></td>
+                            <td><input class ="operacion button" type="button" onclick="forms.answer.value += '÷'"value="÷"></td>
+                            <td><input class ="operacion button" type="button" onclick="forms.answer.value += '+/-'"value="+/-"></td>
+                        </tr>
+                        <tr>
+                            <td><input class ="button" type="button" value="4" onclick="forms.answer.value += '4'"></td>
+                            <td><input class ="button" type="button" value="5" onclick="forms.answer.value += '5'"></td>
+                            <td><input class ="button" type="button" value="6" onclick="forms.answer.value += '6'"></td>
+                            <td><input class ="operacion button" type="button" value="x" onclick="forms.answer.value += 'x'"></td>
+                            <td><button class="operacion button" style="background-color: rgb(170, 0, 0);" onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)"><i class="bi bi-backspace-fill" style="color: white;"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td><input class ="button" type="button" value="1" onclick="forms.answer.value += '1'"></td>
+                            <td><input class ="button" type="button" value="2" onclick="forms.answer.value += '2'"></td>
+                            <td><input class ="button" type="button" value="3" onclick="forms.answer.value += '3'"></td>
+                            <td><input class ="operacion button" type="button" value="-" onclick="forms.answer.value += '-'"></td>
+                            <td  rowspan="5" ><input class ="operacion button" style="height: 110; background-color: rgb(1, 117, 26);" type="button" value="="></td>
+                        </tr>
+                        <tr>
+                            <td><input class ="button" type="button" value="C" onclick="forms.answer.value = ''"></td>
+                            <td><input class ="button" type="button" value="0" onclick="forms.answer.value = '0'"></td>
+                            <td><input class ="button" type="button" value="." onclick="forms.answer.value = '.'"></td>
+                            <td><input class ="operacion button" type="button" value="+" onclick="forms.answer.value = '+'"></td>
+                        </tr>   
+                    </table>
+            </div>
+          </div>
+    </body>
+</html>
