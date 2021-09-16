@@ -1,0 +1,41 @@
+<html>
+<link href="estilos.css" rel="stylesheet" />
+
+<body>
+    <form name="f1">
+            <p>Numero Minimo : <input type="number" class="form-control" style="width: 100px;" maxlength="5" size="5" name="minim" min="0"
+                max="99"></p>
+           <p>Numero Maximo : <input type="number" class="form-control" style="width: 100px;" maxlength="5" size="5" name="maxim" min="1"
+            max="100"></p>
+
+        <input class="btn btn-primary" onclick="calcula_aleatorio()" type="button" value="Calcular Aleatorio">
+        <div class="form-group">
+            <label for="my-file-selector">Resultado:</label>
+            <input class="form-control" style="width: 100px;" maxlength="5" size="5" name="res">
+        </div>
+    </form>
+</body>
+<script>
+    function aleatorio(a, b) {
+        return Math.round(Math.random() * (b - a) + parseInt(a));
+    }
+
+    function calcula_aleatorio() {
+       var minimo = document.f1.minim.value;
+       var maximo = document.f1.maxim.value;
+       var resultado = aleatorio(minimo, maximo);
+       if(parseInt(minimo) > parseInt(maximo)){
+        document.f1.res.value = "No calculable";
+       }
+       else{
+        if (isNaN(resultado)) {
+            document.f1.res.value = "Error!";
+        }
+        else {
+            document.f1.res.value = resultado;
+        }
+       }
+    }
+</script>
+
+</html>
